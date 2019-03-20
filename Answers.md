@@ -17,3 +17,10 @@ ReactDOM.render renders our Cart component at the root of the page.
 Checkoff 1.2
 Pro: Nice, clean UI elements readily available.
 Con: Documentation between libraries and integration may be difficult to understand and implement.
+
+Checkoff 1.3
+The onClick property takes in a function name, and upon a click the event triggers the function call with parameters of either none or the event itself. Since our addToCart function takes in a single, different parameter, we need to wrap it in a function that takes in no parameters and simply calls and returns the result of addToCart. Upon a click, our handleClick function will trigger and the result of that is our desired result from addToCart.
+
+Checkoff 1.4
+a. The .map function allowed us to create a singly defined Product component across our list of given products, resulting in a list of Product components that we did not have to manually write ourselves.
+b. The data from an object may have specific variable/field names, so it is better to abstract away and modularize for any type of data (especially when scaling) rather than to hardcode and assume.
